@@ -11,8 +11,8 @@ import StopScreenShareIcon from '@mui/icons-material/StopScreenShare';
 import ChatIcon from '@mui/icons-material/Chat';
 import CssBaseline from "@mui/material/CssBaseline";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-
-const server_url = "http://localhost:8080";
+import servers from '../enviroment';
+const server_url = servers.prod;
 
 const theme = createTheme({
     palette: { mode: "light" },
