@@ -3,7 +3,7 @@ import {createServer} from "node:http"
 import { Server } from 'socket.io'
 import mongoose from 'mongoose'
 import cors from "cors"
-import { connectTOSocket } from './controllers/socketMAnager.js'
+import { connectTOSocket } from './controllers/socketManager.js'
 import userRoutes from "./routes/users.route.js"
 import dotenv from "dotenv"
 if (process.env.NODE_ENV !== "production") {
