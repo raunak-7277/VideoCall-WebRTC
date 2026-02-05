@@ -343,7 +343,11 @@ const VideoMeet = () => {
                                     if (window.localStream) {
                                          window.localStream.getTracks().forEach(track => track.stop());
                                       }
-                                    window.location.href = "/home"}}>
+                                    if (localStorage.getItem("token")) { 
+                                           window.location.href = "/home"; 
+                                        } else {
+                                             window.location.href = "/";  
+                                        }}}>
                                     <CallEndIcon fontSize="large" />
                                 </IconButton>
                                 <IconButton onClick={handleScreen} className={`p-4 ${screen ? 'bg-blue-500 text-white' : 'text-white hover:bg-white/10'}`}>
